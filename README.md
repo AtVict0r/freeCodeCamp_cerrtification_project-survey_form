@@ -1,7 +1,5 @@
 # freeCodeCamp Survey Form Certification Project
 
-![Project Preview](project-preview.png)
-
 This repository contains my solution to the **Responsive Web Design** course's **Survey Form** certification project on freeCodeCamp.
 
 ## Project Overview
