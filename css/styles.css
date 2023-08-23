@@ -1,0 +1,99 @@
+/* Reset default margin and padding, and set a background color */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; /* Light gray background */
+}
+
+/* Center the form horizontally and provide some spacing */
+#container {
+  width: 80%; /* Set the width of the form */
+  max-width: 600px; /* Limit the maximum width */
+  margin: 50px auto; /* Center the form horizontally and provide vertical spacing */
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px; /* Slightly more rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* More pronounced shadow */
+}
+
+/* Center-align the main heading */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray text color */
+}
+
+/* Add spacing below the description paragraph */
+p {
+  margin-bottom: 20px;
+  color: #555; /* Slightly lighter gray text color */
+}
+
+/* Apply styles to form elements */
+label {
+  display: block;
+  margin-bottom: 8px; /* Slightly reduced spacing below labels */
+  font-weight: bold;
+  color: #333; /* Dark gray text color */
+}
+
+/* Style various input elements */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 90%;
+  padding: 12px; /* Slightly larger padding */
+  margin-bottom: 15px; /* Increased spacing below input elements */
+  border: none; /* Remove borders */
+  border-radius: 6px; /* More rounded corners */
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark gray text color */
+}
+
+/* Style the select dropdown */
+select {
+  height: 40px; /* Slightly larger height */
+}
+
+/* Add spacing between radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px; /* Increased spacing */
+}
+
+/* Style the submit button */
+button {
+  width: 95%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Change button color on hover */
+button:hover {
+  background-color: #0056b3; /* Slightly darker blue */
+}
+
+/* Responsive layout adjustments */
+@media screen and (max-width: 768px) {
+  #container {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Accessibility-friendly adjustments */
+/* Focus outline for keyboard navigation */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

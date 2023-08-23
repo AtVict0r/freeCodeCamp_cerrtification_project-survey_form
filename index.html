@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page title -->
+    <title>Survey Form</title>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      We value your feedback! Please take a moment to fill out this survey.
+    </p>
+    <form id="survey-form">
+      <!-- Input fields for name, email, and age -->
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required />
+
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+
+      <label for="number" id="number-label">Age:</label>
+      <input
+        type="number"
+        id="number"
+        placeholder="Enter your age"
+        min="18"
+        max="99"
+        required
+      />
+
+      <!-- Dropdown for how user heard about the survey -->
+      <label for="dropdown">How did you hear about us?</label>
+      <select id="dropdown" required>
+        <option value="" disabled selected>Select an option</option>
+        <option value="friend">Friend</option>
+        <option value="search">Search engine</option>
+        <option value="social">Social media</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Checkboxes for devices user uses frequently -->
+      <label>What devices do you use frequently?</label>
+      <label for="device1"
+        ><input type="checkbox" id="device1" value="laptop" /> Laptop</label
+      >
+      <label for="device2"
+        ><input type="checkbox" id="device2" value="smartphone" />
+        Smartphone</label
+      >
+      <label for="device3"
+        ><input type="checkbox" id="device3" value="tablet" /> Tablet</label
+      >
+
+      <!-- Radio buttons for what user enjoys most -->
+      <label>What do you enjoy most about our service?</label>
+      <label for="enjoy1"
+        ><input type="radio" id="enjoy1" name="enjoy" value="ease" /> Ease of
+        use</label
+      >
+      <label for="enjoy2"
+        ><input type="radio" id="enjoy2" name="enjoy" value="features" />
+        Features</label
+      >
+      <label for="enjoy3"
+        ><input type="radio" id="enjoy3" name="enjoy" value="support" />
+        Customer support</label
+      >
+
+      <!-- Textarea for additional comments -->
+      <label for="comments">Additional Comments:</label>
+      <textarea
+        id="comments"
+        rows="4"
+        placeholder="Enter your comments"
+      ></textarea>
+
+      <!-- Submit button -->
+      <button id="submit">Submit</button>
+    </form>
+    </div>
+  </body>
+</html>
